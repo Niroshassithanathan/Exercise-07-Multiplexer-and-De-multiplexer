@@ -108,15 +108,17 @@ endmodule
 
 ## DEMULTIPLEXER:
 
-![de1](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/81fc486c-3c82-441b-a529-5baf0bde73e3)
+![D1](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/b8915331-b6d2-4668-af88-d4f69c5bbbb6)
 
 ### TIMING DIGRAMS  
 
 ## MULTIPLEXER:
 
+![m2](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/755ab964-769d-4e4c-b13d-e4f02a8cfc10)
 
 ## DEMULTIPLEXER:
 
+![D2](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/dae32194-afb0-45a4-9270-0b39dfc5356f)
 
 ### TRUTH TABLE 
 ## MULTIPLEXER:
