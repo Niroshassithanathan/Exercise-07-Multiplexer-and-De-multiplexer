@@ -47,42 +47,86 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
+Step 1
+Create a project with required entities.
 
+Step 2
+Create a module along with respective file name for both Multiplexer and De-multiplexer.
+
+Step 3
+Run the module and get the respective RTL outputs.
+
+Step 4
+Create university program(VWF) for getting timing diagram.
+
+Step 5
+Give the respective inputs for timing diagram and obtain the results.
 
 
 ### PROGRAM 
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Nirosha.S
+RegisterNumber:  212222230097
 */
-
-
-
-
-
-
+```
+## MULTIPLEXER:
+```
+module multiplexer(I0,I1,I2,I3,S0,S1,Y);
+input I0,I1,I2,I3,S0,S1;
+output Y;
+wire P,Q,R,S,S0c,S1c;
+not(S0c,S0);
+not(S1c,S1);
+and(P,S0c,S1c,I0);
+and(Q,S0c,S1,I1);
+and(R,S0,S1c,I2);
+and(S,S0,S1,I3);
+or(Y,P,Q,R,S);
+endmodule
+```
+## DEMULTIPLEXER:
+```
+module demultiplexer(Y0,Y1,Y2,Y3,S0,S1,I);
+input I,S0,S1;
+output Y0,Y1,Y2,Y3;
+wire S0c,S1c;
+not(S0c,S0);
+nor(S1c,S1);
+and (Y0,I,S0c,S1c);
+and(Y1,I,S0c,S1);
+and(Y2,I,S0,S1c);
+and(Y3,I,S0,S1);
+endmodule
+```
 ### RTL LOGIC  
 
+##  MULTIPLEXER:
 
+![m1](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/bfb7f1c1-44c8-489e-95f5-2641f83a0631)
 
+## DEMULTIPLEXER:
 
-
-
-
+![de1](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/81fc486c-3c82-441b-a529-5baf0bde73e3)
 
 ### TIMING DIGRAMS  
 
+## MULTIPLEXER:
 
 
+## DEMULTIPLEXER:
 
 
 ### TRUTH TABLE 
+## MULTIPLEXER:
 
+![m3](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/c605ca92-8c28-4400-989c-aa10f30bfb65)
 
+## DEMULTIPLEXER:
 
-
-
+![de2](https://github.com/Niroshassithanathan/Exercise-07-Multiplexer-and-De-multiplexer/assets/121418437/937ec95b-bdb9-44ac-bc42-2273ef579714)
 
 ### RESULTS 
+
+Thus the program to design a 4x1 multiplexer and 1x4 demultiplexer is done successful.
